@@ -6,6 +6,7 @@ import {
   TextInput, 
   Platform,
   FlatList,
+  StatusBar
 } from "react-native"
 
 import { Button } from "../components/Button";
@@ -32,7 +33,7 @@ export function Home() {
     else {
       setGretting('Good night!');
     }
-  }, [mySkill])
+  }, [])
 
   return (
       <View style={styles.container}>
